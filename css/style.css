@@ -51,6 +51,11 @@ body {
 	width: 80%;
 }
 
+.logo_bg img {
+	width: 100%;
+	margin-right: 0;
+}
+
 .slogan {
 	display: flex;
 	position: relative;
@@ -104,14 +109,14 @@ body {
 
 /* hiding content on mobile */
 
-.left-arrow, .right-arrow, .about_section, .desktop__footer {
+.cta-product, .left-arrow, .right-arrow, .about_section, .desktop__footer {
 	display: none;
 }
 
 /* thumbslider mobile footer */
 
-.thumb__slider {
-	transform: rotateZ(180deg);
+.thumb__slider img{
+	width: 100%;
 	position: fixed;
 	bottom: 0em;
 }
