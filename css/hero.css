@@ -1,6 +1,34 @@
 body {
-    background-image: url("../images/lady_on_the_mountain.png");
+    background-image: url("../images/mobile--hero.png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+/* hidden on mobile */
+
+nav {
+    display: none;
+}
+
+.cta--hero {
+    display: none;
+}
+
+/* logo placement */
+
+.logo-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+/* social links footer */
+
+.socLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 6rem;
 }
