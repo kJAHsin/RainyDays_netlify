@@ -80,18 +80,25 @@ body {
 
 .product_carousel_slides {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 	gap: 2em;
 	overflow: scroll;
+	scrollbar-color: transparent;
 	margin-top: 6rem;
 
 }
 
-.product_slide img {
+.product_slide {
 	display: grid;
-	height: 15rem;
+	grid-template-columns: auto;
+	position: relative;
+	
+}
+
+.product_slide img {
+	display: flex;
 	width: auto;
-	border: var(--color-shadow) solid 2px;
+	height: 20rem;
 }
 
 /* hiding content on mobile */
@@ -103,6 +110,7 @@ body {
 /* thumbslider mobile footer */
 
 .thumb__slider {
+	transform: rotateZ(180deg);
 	position: fixed;
-	bottom: 3em;
+	bottom: 0em;
 }
