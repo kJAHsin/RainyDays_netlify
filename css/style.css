@@ -7,7 +7,9 @@
 	--color-accent: #9cb79d;
 	--color-btn: #325329;
 	--color-cta: #dd1c1c;
-	--color-font: #000000;
+	--color-font: #404040;
+	--color-slogan: #3F82AC;
+
 
 	--ff-standard: "Georgia", sans-serif;
 }
@@ -33,77 +35,74 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #708e9e;
+	background-color: #FFFFFF;
 	color: var(--color-font);
 }
 
 /* page margins */
 
 /* header */
-
-.header-home {
-	display: block;
-	background-color: #3d7ea2;
-	margin: 0;
-	max-width: 100vw;
-}
-
-.header-container {
-	display: flex;
-	min-width: 100%;
-	margin: 0;
-}
-
-/* nav */
-
-.top_nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	color: var(--color-font);
-	gap: 2em;
-	padding: 2em 4em 2em 0;
-}
-
-.banner {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	position: relative;
-	width: 90vw;
-    height: auto;
-	gap: 5em;
-	padding: 0;
-	margin: 0 auto;
-}
-
 .logo {
+	display: flex;
+	margin: 2rem 10%;
+	position: fixed;
+	top: 2rem;
+	width: 80%;
+}
+
+.slogan {
+	display: flex;
 	position: relative;
-	width: 20em;
-	height: auto;
+	justify-content: center;
+	padding-top: 2em;
+	color: var(--color-slogan);
+}
+
+.slogan::after {
+	content: '';
+	position: absolute;
+	background-color: var(--color-slogan);
+	width: 65%;
+	height: 2px;
+	bottom: -.5rem;
 }
 
 .header_images {
-	display: flex;
-	flex-wrap: wrap;
+	display: none;
 }
 
-.header_images img {
-	width: 17vw;
-	height: auto;
+/* nav */
+.top_header {
+	display: none;
 }
 
-.product_carousel_slides img {
-	height: 10em;
-	border: #dd1c1c solid 1px;
-	border-radius: 100vw;
-	padding-top: 1em;
-	padding-bottom: 1em;
+/* product carousel */
+
+.product_carousel_slides {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 2em;
+	overflow: scroll;
+	margin-top: 6rem;
+
 }
 
-.left-arrow,
-.right-arrow {
-	border: none;
-	background-color: transparent;
+.product_slide img {
+	display: grid;
+	height: 15rem;
+	width: auto;
+	border: var(--color-shadow) solid 2px;
+}
+
+/* hiding content on mobile */
+
+.left-arrow, .right-arrow, .about_section, .desktop__footer {
+	display: none;
+}
+
+/* thumbslider mobile footer */
+
+.thumb__slider {
+	position: fixed;
+	bottom: 3em;
 }
