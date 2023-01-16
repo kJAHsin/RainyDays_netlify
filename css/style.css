@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-	--color-bg: #708e9e;
+	--color-bg: #47809e;
 	--color-shadow: #3f4a3c;
 	--color-disabled: #a3af9e;
 	--color-accent: #9cb79d;
@@ -86,7 +86,7 @@ body {
 
 .product_carousel {
 	display: grid;
-	grid-template-rows: 20% min-content 20%;
+	grid-template-rows: minmax(20%, 5em) min-content minmax(20%, 3em);
 	margin: 0;
 }
 
@@ -97,8 +97,8 @@ body {
 	gap: 2em;
 	overflow: scroll;
 	scrollbar-color: transparent;
-	/* margin-top: 6rem; */
-
+	-ms-overflow-style: none;  /* hiding scrollbar IE and Edge */
+	scrollbar-width: none;  /* hiding scrollbar Firefox */	
 }
 
 .product_slide {
@@ -114,6 +114,12 @@ body {
 	height: 20rem;
 }
 
+/* hiding scrollbar for chrome*/
+
+::-webkit-scrollbar {
+     background: transparent;
+}
+
 /* hiding content on mobile */
 
 .cta-product, .left-arrow, .right-arrow, .about_section, .desktop__footer {
@@ -122,6 +128,10 @@ body {
 
 /* thumbslider mobile footer */
 
+.thumb__nav-container {
+	visibility: hidden;
+}
+
 .thumb__slider img{
 	width: 100%;
 	position: fixed;
@@ -129,22 +139,27 @@ body {
 }
 
 .hb-menu__container {
-	display: flex;
+	display: grid;
 	justify-content: center;
-	height: auto;
 }
 
 input[type=checkbox] {
 	visibility: hidden;
-	position: fixed;
-	bottom: 3em;
 }
 
 input[type=checkbox] + label {
+	display: grid;
+	justify-content: center;
 	position: fixed;
-	bottom: .5em;
+	width: 100%;
+	bottom: .375em;
 }
 
 input[type=checkbox]:checked + label {
-	height: 15em;
+	height: 35em;
+	background-color: var(--color-bg);
+	border: var(--color-slogan) 10px solid;
+	border-radius: 3em 3em 0 0;
+	padding-top: 1em;
 }
+
