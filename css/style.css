@@ -135,7 +135,9 @@ body {
 }
 
 input[type=checkbox] {
-	display: none;
+	visibility: hidden;
+	position: fixed;
+	bottom: 3em;
 }
 
 input[type=checkbox] + label {
@@ -143,4 +145,6 @@ input[type=checkbox] + label {
 	bottom: .5em;
 }
 
-
+input[type=checkbox]:checked + label {
+	height: 15em;
+}
