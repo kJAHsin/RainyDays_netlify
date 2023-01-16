@@ -84,13 +84,20 @@ body {
 
 /* product carousel */
 
+.product_carousel {
+	display: grid;
+	grid-template-rows: 20% min-content 20%;
+	margin: 0;
+}
+
 .product_carousel_slides {
+	grid-area: 2;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	gap: 2em;
 	overflow: scroll;
 	scrollbar-color: transparent;
-	margin-top: 6rem;
+	/* margin-top: 6rem; */
 
 }
 
