@@ -12,6 +12,7 @@
 	--color-slogan: #3f82ac;
 
 	--ff-standard: "Georgia", sans-serif;
+	--fs-bigger: 1.25em;
 	--fs-standard: 1em;
 	--fs-small: 0.625em;
 }
@@ -76,10 +77,9 @@ header {
 
 .logo {
 	display: flex;
-	position: absolute;
-	margin: 2em 8vw;
-	top: 2rem;
+	margin: -5em auto -3em;
 	width: 80%;
+	max-width: 500px;
 }
 
 .logo_bg img {
@@ -91,9 +91,8 @@ header {
 	display: flex;
 	position: relative;
 	justify-content: center;
-	padding-top: 2em;
 	color: var(--color-slogan);
-	font-size: var(--fs-standard);
+	font-size: var(--fs-bigger);
 }
 
 .slogan::after {
@@ -101,6 +100,7 @@ header {
 	position: absolute;
 	background-color: var(--color-slogan);
 	width: 65%;
+	max-width: 500px;
 	height: 2px;
 	bottom: -0.5rem;
 }
@@ -244,7 +244,6 @@ input[type="checkbox"]:checked + label {
 .product__container {
 	display: grid;
 	justify-content: center;
-	overflow-x: hidden;
 }
 
 .product__main {
@@ -256,22 +255,30 @@ input[type="checkbox"]:checked + label {
 
 .product__image-container {
 	display: flex;
-	justify-content: center;
+	justify-self: center;
+	width: max-content;
 }
 
 .product__main img {
-	width: 8em;
+	display: inline-block;
+	width: 100%;
+	height: auto;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 375px) {
 	.product__main {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
+	.product__image-container {
+		padding-left: 1em;
+		margin-inline: auto;
+	}
+	
 	.slogan {
-		display: none;
+		font-size: var(--fs-standard);
 	}
 }
 
