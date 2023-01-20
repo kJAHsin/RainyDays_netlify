@@ -48,6 +48,9 @@ main {
 	overflow-y: scroll;
 }
 
+.sr-only {
+	visibility: hidden;
+}
 /* hiding content on mobile */
 
 .left-arrow, .right-arrow, .about_section, .desktop__footer {
