@@ -7,6 +7,7 @@
 	--color-accent: #9cb79d;
 	--color-btn: #325329;
 	--color-cta: #dd1c1c;
+	--color-ctatext: #ffffff;
 	--color-font: #404040;
 	--color-slogan: #3F82AC;
 
@@ -34,6 +35,7 @@ html {
 }
 
 body {
+	display: grid;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -43,15 +45,13 @@ body {
 	color: var(--color-font);
 	box-sizing: inherit;
 	background-color: #FFFFFF;
+	width: 100%;
 }
 
 main {
 	display: grid;
 	justify-content: center;
-	padding-right: 0;
-	margin: 0;
-	width: 100%;
-	overflow-y: scroll;
+	margin: 0 auto;
 }
 
 .sr-only {
@@ -119,18 +119,18 @@ header {
 
 .product_carousel {
 	display: grid;
-	grid-template-rows: minmax(20%, 2em) min-content minmax(20%, 3em);
+	grid-template-rows:min-content minmax(20%, 3em);
 	margin: 0;
 }
 
 .product_carousel_slides {
-	grid-area: 2;
+	grid-area: 1;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	gap: 2em;
-	margin: 0;
+	gap: 1.25em;
+	margin: 2em 0 0 0;
 	padding: 0;
-	overflow: scroll;
+	overflow-x: scroll;
 	-ms-overflow-style: none;  /* hiding scrollbar IE and Edge */
 	scrollbar-width: none;  /* hiding scrollbar Firefox */	
 }
@@ -206,7 +206,7 @@ input[type=checkbox]:checked + label {
 /* products page */
 
 .products__container {
-	display: block;
+	display: grid;
 	margin: 0;
 	padding: 0;
 	height: auto;
@@ -223,11 +223,52 @@ input[type=checkbox]:checked + label {
 	padding: 0;
 }
 
-/* .products__box {
-}
-
 .products__link {
+	display: block;
+	width: 10em;
 }
 
-.product__image {
-} */
+/* .product__image {} */
+
+
+
+/* individual product pages */
+
+.product__main {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 4em 2em 0;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 350px) {
+	.product__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.product__info {
+	text-align: start;
+}
+
+.product__title {
+	margin-left: 0;
+	padding-bottom: .5em;
+}
+
+.product__desc {
+	max-width: 25ch;
+	padding-bottom: .25em;
+}
+
+.btn__add-cart {
+	display: flex;
+	border: var(--color-shadow);
+	background-color: var(--color-cta);
+	color: var(--color-ctatext);
+	padding: .25em 0;
+	justify-content: center;
+	width: 50%;
+}
