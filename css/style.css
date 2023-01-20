@@ -12,6 +12,7 @@
 
 
 	--ff-standard: "Georgia", sans-serif;
+	--fs-standard: 1em;
 }
 
 /* global laws */
@@ -35,8 +36,13 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+	font-family: var(--ff-standard);
+	font-size: var(--fs-standard);
 	color: var(--color-font);
+	box-sizing: inherit;
+	background-color: #FFFFFF;
 }
 
 main {
@@ -83,6 +89,7 @@ header {
 	justify-content: center;
 	padding-top: 2em;
 	color: var(--color-slogan);
+	font-size: var(--fs-standard);
 }
 
 .slogan::after {
