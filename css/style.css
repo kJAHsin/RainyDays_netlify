@@ -83,7 +83,7 @@ header {
 
 .logo_bg img {
 	width: 100%;
-	margin-right: 0;
+	margin: 0;
 }
 
 .slogan {
@@ -145,14 +145,20 @@ header {
 
 .product_slide img {
 	display: block;
-	height: 20rem;
+	height: 20em;
 	width: auto;
 }
 
 .cta-product {
-	display: inline-block;
-	margin: 0 auto;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	border: var(--color-shadow) solid 2px;
+	background-color: var(--color-cta);
+	color: var(--color-ctatext);
+	width: 50%;
+	border-radius: 0.5em;
+	margin-inline: auto;
+	padding-block: 1em;
 }
 
 /* hiding scrollbar for chrome*/
@@ -277,13 +283,14 @@ input[type="checkbox"]:checked + label {
 
 .btn__add-cart {
 	display: flex;
-	border: var(--color-shadow);
+	border: var(--color-shadow) solid 2px;
 	background-color: var(--color-cta);
 	color: var(--color-ctatext);
-	padding: 0.25em 0;
+	width: 50%;
+	border-radius: 0.5em;
+	padding: 0.75em 0.25em;
 	justify-content: center;
 	justify-self: center;
-	width: 50%;
 }
 
 /* dividing line */

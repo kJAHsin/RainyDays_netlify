@@ -33,7 +33,8 @@ nav {
     border: none;
     background-color: transparent;
     font-size: 1.2em;
-    right: 2em;
+    right: 50%;
+    bottom: 75%;
 }
 
 .cta--hero:hover, .cta--hero:focus {
