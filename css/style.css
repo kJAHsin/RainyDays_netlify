@@ -35,7 +35,6 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	max-width: 100%;
 	background-color: #FFFFFF;
 	color: var(--color-font);
 }
@@ -45,8 +44,14 @@ main {
 	justify-content: center;
 	padding-right: 0;
 	margin: 0;
-	max-width: 100%;
+	width: 100%;
 	overflow-y: scroll;
+}
+
+/* hiding content on mobile */
+
+.left-arrow, .right-arrow, .about_section, .desktop__footer {
+	display: none;
 }
 
 /* page margins */
@@ -104,7 +109,7 @@ header {
 
 .product_carousel {
 	display: grid;
-	grid-template-rows: minmax(20%, 5em) min-content minmax(20%, 3em);
+	grid-template-rows: minmax(20%, 2em) min-content minmax(20%, 3em);
 	margin: 0;
 }
 
@@ -113,23 +118,23 @@ header {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	gap: 2em;
+	margin: 0;
+	padding: 0;
 	overflow: scroll;
-	scrollbar-color: transparent;
 	-ms-overflow-style: none;  /* hiding scrollbar IE and Edge */
 	scrollbar-width: none;  /* hiding scrollbar Firefox */	
 }
 
 .product_slide {
 	display: grid;
-	grid-template-columns: auto;
 	position: relative;
 	
 }
 
 .product_slide img {
-	display: flex;
-	width: auto;
+	display: block;
 	height: 20rem;
+	width: auto;
 }
 
 .cta-product {
@@ -144,11 +149,6 @@ header {
      background: transparent;
 }
 
-/* hiding content on mobile */
-
-.left-arrow, .right-arrow, .about_section, .desktop__footer {
-	display: none;
-}
 
 /* thumbslider mobile footer */
 
@@ -200,7 +200,6 @@ input[type=checkbox]:checked + label {
 	margin: 0;
 	padding: 0;
 	height: auto;
-	width: 90vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -211,7 +210,7 @@ input[type=checkbox]:checked + label {
 	column-gap: 1em;
 	justify-content: center;
 	margin: 2em 0 5em;
-	padding: 0 0 0 .125em;
+	padding: 0;
 }
 
 .products__box {
