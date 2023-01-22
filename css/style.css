@@ -91,6 +91,11 @@ header {
 	.logo_bg {
 		position: relative;
 		top: -3em;
+		z-index: -1;
+	}
+
+	.logo {
+		margin-top: -9em;
 	}
 }
 
@@ -197,6 +202,11 @@ header {
 	justify-content: center;
 }
 
+.thumb-nav__icons,
+.burger__social {
+	display: none;
+}
+
 input[type="checkbox"] {
 	visibility: hidden;
 }
@@ -213,11 +223,29 @@ input[type="checkbox"]:checked + label {
 	position: fixed;
 	bottom: 0;
 	height: 35em;
+	width: 100%;
 	background-color: var(--color-bg);
 	border: var(--color-slogan) 10px solid;
 	border-radius: 3em 3em 0 0;
 	padding-top: 1em;
+	
 }
+
+input[type="checkbox"]:checked + label > #burger__icon {
+	margin-inline: auto;
+}
+
+input[type="checkbox"]:checked + label > .thumb-nav__icons {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+input[type="checkbox"]:checked + label > .burger__social {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
 
 /* products page */
 
@@ -253,7 +281,7 @@ input[type="checkbox"]:checked + label {
 
 /* .product__image {} */
 
-/* individual product pages */
+/* individual product page */
 
 .product__container {
 	display: grid;
@@ -263,7 +291,7 @@ input[type="checkbox"]:checked + label {
 .product__main {
 	display: grid;
 	grid-template-columns: auto auto;
-	margin: 4em 2em 2em;
+	margin: 2em 2em 2em;
 	justify-content: center;
 }
 
@@ -287,7 +315,7 @@ input[type="checkbox"]:checked + label {
 	}
 
 	.product__image-container {
-		padding-left: 1em;
+		padding-left: 1.2em;
 		margin-inline: auto;
 	}
 
@@ -295,7 +323,7 @@ input[type="checkbox"]:checked + label {
 		font-size: var(--fs-standard);
 		max-width: 18ch;
 		text-align: center;
-		margin: 1.5em auto 0;
+		margin: 0 auto;
 	}
 }
 
