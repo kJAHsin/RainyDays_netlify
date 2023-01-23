@@ -28,7 +28,7 @@ nav {
     display: none;
 }
 
-.cta--hero {
+.btn__cta-hero {
     position: relative;
     border: none;
     background-color: transparent;

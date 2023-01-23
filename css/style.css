@@ -330,7 +330,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 		font-size: var(--fs-standard);
 		max-width: 18ch;
 		text-align: center;
-		margin: 0 auto;
+		margin: 1em auto 0;
 	}
 }
 
@@ -352,7 +352,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	font-size: var(--fs-small);
 }
 
-.btn__add-cart {
+.btn {
 	display: flex;
 	border: var(--color-shadow) solid 2px;
 	background-color: var(--color-cta);
@@ -391,3 +391,81 @@ input[type="checkbox"]:checked + label > .burger__social {
 .image__container img {
 	object-fit: cover;
 }
+
+/* cart page */
+
+.product__img-chk {
+	display: flex;
+	justify-content: center;
+	padding-left: 1em;
+}
+
+/* placing summary on grid */
+
+.summary__chk {
+	width: 80%;
+	display: grid;
+	grid-template-areas: 
+	". qua pri"
+	"jnam qua1 pri1"
+	"shi qua2 pri2"
+	". . pri3";
+	grid-template-columns: auto 30% 30%;
+	grid-template-rows: auto 40% 40% auto;
+	justify-self: center;
+	margin-block: 2em;
+}
+
+.summary__chk-txt1 {
+	grid-area: qua;
+}
+
+.summary__chk-txt2 {
+	grid-area: pri;
+}
+
+.summary__chk-txt3 {
+	grid-area: jnam;
+}
+
+.summary__chk-txt4 {
+	grid-area: qua1;
+}
+
+.summary__chk-txt5 {
+	grid-area: pri1;
+}
+
+.summary__chk-txt6 {
+	grid-area: shi;
+}
+
+.summary__chk-txt7 {
+	grid-area: qua2;
+}
+
+.summary__chk-txt8 {
+	grid-area: pri2;
+}
+
+.summary__chk-txt9 {
+	grid-area: pri3;
+}
+
+.summary__chk > * {
+	display: block;
+	text-align: end;
+}
+
+.summary__chk-txt3, .summary__chk-txt6 {
+	padding-right: 1em;
+}
+
+/* grid lines cart page */
+
+.summary__chk-txt1, .summary__chk-txt2, .summary__chk-txt7, .summary__chk-txt8 {
+	border-bottom: var(--color-shadow) solid 2px;
+}
+
+
+
