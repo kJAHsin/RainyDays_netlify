@@ -36,7 +36,6 @@
 						>
 					</a>
 				</div>
-
 				<div class="header_images">
 					<img
 						src="../images/dude_mountains-1.png"
@@ -53,69 +52,102 @@
 				</div>
 			</section>
 		</header>
-		<div class="thumb__slider">
-			<img src="../images/ellips_bottom.png" alt="" />
-		</div>
-		<nav class="mobile__nav">
-			<div class="hb-menu__container">
-				<input type="checkbox" name="hamburger" id="hb-menu" /><label
-					for="hb-menu"
-					><img
-						src="../images/hb-menu.png"
-						alt="hamburger menu for nav"
-						id="burger__icon"
-					/>
-					<span class="thumb-nav__icons">
-						<span class="products-link__nav"
-							><a
-								rel="noopener noferrer"
-								target="_blank"
-								href="/html/product.html"
-								><img
-									src="../images/icon-products.png"
-									alt="nav link to products" /></a
-						></span>
-						<span class="cart-link__nav"
-							><a
-								rel="noopener noferrer"
-								target="_blank"
-								href="/html/cart.html"
-								><img
-									src="../images/icon-cart.png"
-									alt="nav link to shopping cart" /></a
-						></span>
-						<span class="contacts-link__nav"
-							><a
-								rel="noopener noferrer"
-								target="_blank"
-								href="/html/contact.html"
-								><img
-									src="../images/icon-contact.png"
-									alt="nav link to contact" /></a
-						></span>
-						<span class="about-link__nav"
-							><a
-								rel="noopener noferrer"
-								target="_blank"
-								href="/html/about.html"
-								><img
-									src="../images/icon-about.png"
-									alt="nav link to about page" /></a
-						></span>
-					</span>
-					<span class="burger__social">
-						<a href="https://instagram.com"
-							><img src="/images/Instagram.png" alt="Instagram"
-						/></a>
-						<a href="https://twitter.com"
-							><img src="/images/Twitter.png" alt="Twitter"
-						/></a>
-						<a href="https://facebook.com"
-							><img src="/images/Facebook.png" alt="Facebook"
-						/></a>
-					</span>
-				</label>
+		<main>
+			<div class="chkout__form">
+                <form
+                    action="add payment"
+                    class="chkout__pmt"
+                    label="payment details"
+                >
+                    <h3 id="chkout__pmt-title">payment details</h3>
+                    <form
+                        action="choose payment method"
+                        class="chkout__pmt-meth"
+                        label="payment method"
+                    >
+                                <label for="paypal"><input type="radio" name="radio" id="paypal"><span><h4>Paypal</h4><p>Safe payment online. Credit card needed.</p></span></label>
+                                <label for="visa"><input type="radio" name="radio" id="visa" checked><span><h4>Visa</h4><p>Safe money transfer using your bank account</p></span></label>
+                            </form>
+                            <form action="enter card details" class="chkout__card-det" label="card details">
+                                <label for="creditcardnum"><span>credit card#</span><input type="text" name="text" id="creditcardnum" placeholder="0000 0000 0000 ****"></label>
+                                <label for="creditcardcvc"><span>cvc<span>code</span></span><input type="password" name="text" id="creditcardcvc" placeholder="***"></label>
+                                <label for="creditcardexp"><span>expiry date</span><input type="text" name="date" id="creditcardexp" placeholder="MM/YY"></label>
+                            </form>
+                </form>
+                <a href="/html/checkout_success.html" class="btn btn__comp-check">complete payment</a>
+            </div>
+		</main>
+
+		<footer>
+			<div class="thumb__slider">
+				<img src="../images/ellips_bottom.png" alt="" />
 			</div>
-		</nav>
+			<nav class="mobile__nav">
+				<div class="hb-menu__container">
+					<input
+						type="checkbox"
+						name="hamburger"
+						id="hb-menu"
+					/><label for="hb-menu"
+						><img
+							src="../images/hb-menu.png"
+							alt="hamburger menu for nav"
+							id="burger__icon"
+						/>
+						<span class="thumb-nav__icons">
+							<span class="products-link__nav"
+								><a
+									rel="noopener noferrer"
+									target="_blank"
+									href="/html/product.html"
+									><img
+										src="../images/icon-products.png"
+										alt="nav link to products" /></a
+							></span>
+							<span class="cart-link__nav"
+								><a
+									rel="noopener noferrer"
+									target="_blank"
+									href="/html/cart.html"
+									><img
+										src="../images/icon-cart.png"
+										alt="nav link to shopping cart" /></a
+							></span>
+							<span class="contacts-link__nav"
+								><a
+									rel="noopener noferrer"
+									target="_blank"
+									href="/html/contact.html"
+									><img
+										src="../images/icon-contact.png"
+										alt="nav link to contact" /></a
+							></span>
+							<span class="about-link__nav"
+								><a
+									rel="noopener noferrer"
+									target="_blank"
+									href="/html/about.html"
+									><img
+										src="../images/icon-about.png"
+										alt="nav link to about page" /></a
+							></span>
+						</span>
+						<span class="burger__social">
+							<a href="https://instagram.com"
+								><img
+									src="/images/Instagram.png"
+									alt="Instagram"
+							/></a>
+							<a href="https://twitter.com"
+								><img src="/images/Twitter.png" alt="Twitter"
+							/></a>
+							<a href="https://facebook.com"
+								><img src="/images/Facebook.png" alt="Facebook"
+							/></a>
+						</span>
+					</label>
+				</div>
+			</nav>
+		</footer>
 	</body>
 </html>
