@@ -216,7 +216,7 @@ input[type="checkbox"] + label {
 	justify-content: center;
 	position: fixed;
 	width: 100%;
-	bottom: 0.375em;
+	bottom: 0.5em;
 }
 
 input[type="checkbox"]:checked + label {
@@ -543,4 +543,30 @@ input[type="checkbox"]:checked + label > .burger__social {
 .img__cont:last-of-type {
 	padding-inline-start: 1em;
 	margin-block-end: 1em;
+}
+
+/* about us page mobile */
+
+.about_section-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about__img {
+	margin-inline: 3em;
+	border-radius: 2em;
+	overflow: hidden;
+}
+
+.about_text {
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin-inline: auto;
+	margin-block-end: 10em;
+}
+
+.about_text h2 {
+	margin-block-start: 1em;
 }
