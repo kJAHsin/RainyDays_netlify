@@ -359,6 +359,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	padding: 0.75em 0.25em;
 	justify-content: center;
 	justify-self: center;
+	margin-block-end: 6em;
 }
 
 /* dividing line */
