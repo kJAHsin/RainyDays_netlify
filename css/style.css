@@ -216,7 +216,7 @@ input[type="checkbox"] + label {
 	justify-content: center;
 	position: fixed;
 	width: 100%;
-	bottom: 0.5em;
+	bottom: 0.375em;
 }
 
 input[type="checkbox"]:checked + label {
@@ -547,26 +547,58 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 /* about us page mobile */
 
-.about_section-mobile {
+.about__mobile-main {
+	display: grid;
+	grid-auto-flow: row;
+	margin-block-end: 2em;
+}
+
+#about__header-image {
+	display: block;
+	width: 20em;
+	height: auto;
+	margin: 2em auto;
+}
+
+#about__header-image img {
+	width: 100%;
+}
+
+.about__mobile-txt {
+	display: block;
+	max-width: 80%;
+	text-align: center;
+	justify-self: center;
+}
+
+.mailing-list__form {
+	margin-inline: auto;
+	margin-block-end: 6em;
+	max-width: 26.25em;
+}
+
+.mailing_list {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	border: var(--color-shadow) solid 2px;
+	border-radius: 1em;
+	padding: 1.5em;
+	margin-inline: 2em;
+	background-color: var(--color-btn);
 }
 
-.about__img {
-	margin-inline: 3em;
-	border-radius: 2em;
-	overflow: hidden;
-}
-
-.about_text {
-	display: block;
+.mailing_list h2 {
+	color: var(--color-ctatext);
 	text-align: center;
-	width: 80%;
-	margin-inline: auto;
-	margin-block-end: 10em;
 }
 
-.about_text h2 {
-	margin-block-start: 1em;
+.mailing_list input {
+	max-width: 30em;
+	margin-inline: auto;
+	margin-block-end: 1em;
+}
+
+.mailing_list button {
+	margin-inline: auto;
+	max-width: 16em;
 }
