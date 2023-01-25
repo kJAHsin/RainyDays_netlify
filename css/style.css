@@ -142,8 +142,7 @@ header {
 
 	.header-home,
 	.top_header,
-	.header_images,
-	.desktop__footer {
+	.header_images {
 		display: block;
 	}
 
