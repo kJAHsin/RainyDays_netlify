@@ -514,6 +514,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 .btn__comp-check {
 	margin-block: 2em;
 	text-align: center;
+	width: 100%;
 }
 
 /* checkout success */
