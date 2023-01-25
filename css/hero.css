@@ -94,7 +94,7 @@ nav {
 
     nav {
         display: block;
-        margin: 1.5em 2em 0 0;
+        margin: 1.5em 10% 0 0;
     }
 
     .nav__header-links {
@@ -117,4 +117,11 @@ nav {
     position: fixed;
     bottom: 6rem;
     left: 2rem;
+}
+
+@media only screen and (min-width: 690px) { 
+    .socLinks {
+        flex-direction: row;
+        gap: 10vw;
+    }
 }

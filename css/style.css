@@ -61,8 +61,6 @@ main {
 }
 /* hiding content on mobile */
 
-.left-arrow,
-.right-arrow,
 .about_section,
 .desktop__footer {
 	display: none;
@@ -71,9 +69,6 @@ main {
 /* page margins */
 
 /* header */
-header {
-	display: fixed;
-}
 
 .logo {
 	display: flex;
@@ -164,6 +159,7 @@ header {
 		align-items: center;
 		margin: 1em 3em;
 		gap: 2em;
+		max-width: 1380px;
 	}
 
 	.top_nav a:hover,
@@ -211,6 +207,9 @@ header {
 	.product_carousel--container {
 		position: relative;
 		top: 8em;
+		display: flex;
+		flex-direction: column;
+		
 	}
 }
 
@@ -240,15 +239,35 @@ header {
 .cta-product {
 	display: flex;
 	justify-content: center;
+	position: relative;
+	top: .5em;
 	border: var(--color-shadow) solid 2px;
 	background-color: var(--color-cta);
 	color: var(--color-ctatext);
 	width: 50%;
 	border-radius: 0.5em;
-	margin-inline: auto;
-	margin-top: -2em;
+	margin-inline: 10vw;
 	padding-block: 1em;
+	align-items: center;
+	font-size: 1.125em;
 }
+
+/* scroll arrows for product carousel */
+
+.product_carousel--nav {
+	display: flex;
+	justify-self: center;
+	margin-inline: auto;
+	max-width: 95%;
+}
+
+.product_carousel-arrows {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: .5em;
+}
+
 
 /* hiding scrollbar for chrome*/
 
@@ -465,6 +484,12 @@ input[type="checkbox"]:checked + label > .burger__social {
 }
 
 /* cart page */
+@media only screen and (min-width: 530px) {
+	.logo-span__cart img {
+		width: 20em;
+		margin-block-start: .5em;	
+	}	
+}
 
 .product__img-chk {
 	display: flex;
@@ -574,7 +599,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	margin-block-end: 0.5em;
 	border-block-end: var(--color-shadow) 2px solid;
 	padding-block: 0.375em;
-	background-color: var(--color-bg);
+	background-color: var(--color-slogan);
 	color: var(--color-ctatext);
 }
 
