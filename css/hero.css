@@ -1,17 +1,20 @@
 /* variables */
 
 :root {
-	--color-bg: #708e9e;
+	--color-bg: #47809e;
 	--color-shadow: #3f4a3c;
 	--color-disabled: #a3af9e;
 	--color-accent: #9cb79d;
 	--color-btn: #325329;
 	--color-cta: #dd1c1c;
+	--color-ctatext: #ffffff;
 	--color-font: #404040;
-	--color-slogan: #3F82AC;
-
+	--color-slogan: #3f82ac;
 
 	--ff-standard: "Georgia", sans-serif;
+	--fs-bigger: 1.25em;
+	--fs-standard: 1em;
+	--fs-small: 0.625em;
 }
 
 
@@ -30,11 +33,19 @@ nav {
 
 .btn__cta-hero {
     position: relative;
-    border: none;
-    background-color: transparent;
+    display: flex;
+    height: fit-content;
+    border: var(--color-shadow) 2px solid;
+    background-color: var(--color-btn);
+    padding: 1em;
     font-size: 1.2em;
-    right: 50%;
-    bottom: 75%;
+    right: 40%;
+    bottom: 25%;
+    border-radius: .75em;
+}
+
+.btn__cta-hero a {
+    color: var(--color-ctatext);
 }
 
 .cta--hero:hover, .cta--hero:focus {
@@ -50,7 +61,11 @@ nav {
     margin-top: 1em;
 }
 
-/* scrolling action to open tabs */
+/* slogan */
+
+.slogan__hero {
+    margin-block-start: -2em;
+}
 
 /* social links footer */
 
