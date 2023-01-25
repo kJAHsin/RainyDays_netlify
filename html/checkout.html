@@ -54,28 +54,70 @@
 		</header>
 		<main>
 			<div class="chkout__form">
-                <form
-                    action="add payment"
-                    class="chkout__pmt"
-                    label="payment details"
-                >
-                    <h3 id="chkout__pmt-title">payment details</h3>
-                    <form
-                        action="choose payment method"
-                        class="chkout__pmt-meth"
-                        label="payment method"
-                    >
-                                <label for="paypal"><input type="radio" name="radio" id="paypal"><span><h4>Paypal</h4><p>Safe payment online. Credit card needed.</p></span></label>
-                                <label for="visa"><input type="radio" name="radio" id="visa" checked><span><h4>Visa</h4><p>Safe money transfer using your bank account</p></span></label>
-                            </form>
-                            <form action="enter card details" class="chkout__card-det" label="card details">
-                                <label for="creditcardnum"><span>credit card#</span><input type="text" name="text" id="creditcardnum" placeholder="0000 0000 0000 ****"></label>
-                                <label for="creditcardcvc"><span>cvc<span>code</span></span><input type="password" name="text" id="creditcardcvc" placeholder="***"></label>
-                                <label for="creditcardexp"><span>expiry date</span><input type="text" name="date" id="creditcardexp" placeholder="MM/YY"></label>
-                            </form>
-                </form>
-                <a href="/html/checkout_success.html" class="btn btn__comp-check">complete payment</a>
-            </div>
+				<form class="chkout__pmt">
+					<h3 id="chkout__pmt-title">payment details</h3>
+					<div class="chkout__pmt-meth">
+						<label for="paypal"
+							><input
+								type="radio"
+								name="radio"
+								id="paypal"
+							/><span
+								><span>Paypal</span><br>
+								<span>
+									Safe payment online. Credit card needed.
+								</span></span
+							></label
+						>
+						<label for="visa"
+							><input
+								type="radio"
+								name="radio"
+								id="visa"
+								checked
+							/><span
+								><span>Visa</span>
+								<span>
+									Safe money transfer using your bank account
+								</span></span
+							></label
+						>
+					</div>
+					<div
+						class="chkout__card-det"
+					>
+						<label for="creditcardnum"
+							><span>credit card#</span
+							><input
+								type="text"
+								name="text"
+								id="creditcardnum"
+								placeholder="0000 0000 0000 ****"
+						/></label>
+						<label for="creditcardcvc"
+							><span>cvc<span>code</span></span
+							><input
+								type="password"
+								name="text"
+								id="creditcardcvc"
+								placeholder="***"
+						/></label>
+						<label for="creditcardexp"
+							><span>expiry date</span
+							><input
+								type="text"
+								name="date"
+								id="creditcardexp"
+								placeholder="MM/YY"
+						/></label>
+					</div>
+				</form>
+				<a
+					href="/html/checkout_success.html"
+					class="btn btn__comp-check"
+					>complete payment</a
+				>
+			</div>
 		</main>
 
 		<footer>
