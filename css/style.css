@@ -527,9 +527,9 @@ input[type="checkbox"]:checked + label > .burger__social {
 /* checkout success */
 
 .chk__success-img {
-	display: grid;
-	grid-auto-flow: row;
-	max-width: 80%;
+	display: flex;
+	flex-direction: column;
+	max-width: 8em;
 	justify-self: center;
 	margin-block-start: 1.25em;
 }
@@ -537,6 +537,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 .chk__success-txt {
 	text-align: center;
 	max-width: 25ch;
+	margin-block-end: 12em;
 }
 
 .chk__success-txt h2 {
@@ -544,13 +545,17 @@ input[type="checkbox"]:checked + label > .burger__social {
 }
 
 .img__cont {
-	display: block;
-	margin-inline: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.img__cont + img {
+	width: 100%;
 }
 
 .img__cont:last-of-type {
-	padding-inline-start: 1em;
 	margin-block-end: 1em;
+	padding-inline-start: 1.5em;
 }
 
 /* about us page mobile */
