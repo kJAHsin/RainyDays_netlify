@@ -577,7 +577,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	max-width: 26.25em;
 }
 
-.mailing_list__mobile {
+.mailing-list__mobile {
 	display: flex;
 	flex-direction: column;
 	border: var(--color-shadow) solid 2px;
@@ -587,18 +587,18 @@ input[type="checkbox"]:checked + label > .burger__social {
 	background-color: var(--color-btn);
 }
 
-.mailing_list__mobile h2 {
+.mailing-list__mobile h2 {
 	color: var(--color-ctatext);
 	text-align: center;
 }
 
-.mailing_list__mobile input {
+.mailing-list__mobile input {
 	max-width: 30em;
 	margin-inline: auto;
 	margin-block-end: 1em;
 }
 
-.mailing_list__mobile button {
+.btn__join {
 	margin-inline: auto;
 	max-width: 16em;
 }
