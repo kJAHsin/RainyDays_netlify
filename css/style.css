@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-	--color-bg: #47809e;
+	--color-bg: #6ba2c0;
 	--color-shadow: #3f4a3c;
 	--color-disabled: #a3af9e;
 	--color-accent: #9cb79d;
@@ -9,7 +9,7 @@
 	--color-cta: #dd1c1c;
 	--color-ctatext: #ffffff;
 	--color-font: #404040;
-	--color-slogan: #3f82ac;
+	--color-slogan: #256186;
 
 	--ff-standard: "Georgia", sans-serif;
 	--fs-bigger: 1.25em;
@@ -87,18 +87,6 @@ header {
 	margin: 0;
 }
 
-@media only screen and (min-width: 500px) {
-	.logo_bg {
-		position: relative;
-		top: -3em;
-		z-index: -1;
-	}
-
-	.logo {
-		margin-top: -9em;
-	}
-}
-
 .slogan {
 	display: flex;
 	position: relative;
@@ -126,6 +114,86 @@ header {
 	display: none;
 }
 
+@media only screen and (min-width: 530px) {
+	.logo_bg {
+		display: none;
+	}
+
+	.logo-span__header {
+		position: relative;
+		top: 6em;
+	}
+
+	.cta-product {
+		margin-block-end: 10em;
+		max-width: 12em;
+	}
+
+	.thumb__slider img {
+		position: fixed;
+		top: 87.5%;
+	}
+}
+
+@media only screen and (min-width: 685px) {
+	.mobile__nav,
+	.thumb__slider {
+		display: none;
+	}
+
+	.header-home,
+	.top_header,
+	.header_images,
+	.desktop__footer {
+		display: block;
+	}
+
+	.header-home {
+		background-color: var(--color-bg);
+	}
+
+	.logo-span__header {
+		position: absolute;
+		top: 15rem;
+		left: 3rem;
+	}
+
+	.top_nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 1em 3em;
+		gap: 2em;
+	}
+
+	.top_nav a:hover,
+	.top_nav a:focus {
+		text-decoration: underline;
+	}
+
+	.header_images {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.header_images img:nth-child(2),
+	.header_images img:nth-child(3) {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 975px) {
+	.header_images img:nth-child(2) {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1265px) {
+	.header_images img:nth-child(3) {
+		display: flex;
+	}
+}
+
 /* mobile nav */
 .mobile__nav {
 	position: fixed;
@@ -137,6 +205,13 @@ header {
 	display: grid;
 	grid-template-rows: min-content minmax(20%, 3em);
 	margin: 0;
+}
+
+@media only screen and (min-width: 530px) {
+	.product_carousel--container {
+		position: relative;
+		top: 8em;
+	}
 }
 
 .product_carousel_slides {
@@ -475,33 +550,57 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 /* checkout page */
 
-.chkout__pmt {
-	display: grid;
-}
-
-.chkout__pmt-meth > label {
-	display: grid;
-}
-
-.chkout__card-det > label {
-	display: block;
-}
-
-.chkout__pmt-meth > label > span {
-	display: block;
-}
-
-.chkout__card-det > label > span {
-	display: inline-block;
-	text-align: center;
-}
-
 .chkout__form {
 	margin-top: 3em;
 	display: grid;
 	justify-self: center;
 	justify-content: center;
 	max-width: 90%;
+}
+
+.chkout__pmt {
+	display: grid;
+	grid-auto-rows: auto;
+	max-width: 100%;
+	border: var(--color-shadow) 2px solid;
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+
+#chkout__pmt-title {
+	text-align: center;
+	font-size: 1.75em;
+	text-transform: capitalize;
+	margin-block-end: 0.5em;
+	border-block-end: var(--color-shadow) 2px solid;
+	padding-block: 0.375em;
+	background-color: var(--color-bg);
+	color: var(--color-ctatext);
+}
+
+.chkout__pmt-meth > label,
+.chkout__pmt-meth > label > span,
+.chkout__card-det > label,
+.chkout__card-det > label > span {
+	display: block;
+	padding-inline-start: 0.75em;
+}
+
+.payment-meth__title {
+	font-size: 1.25em;
+	font-weight: 600;
+	padding: 0.25em 0 0.125em 0.25em;
+	position: relative;
+	left: 10%;
+	bottom: 0.5em;
+}
+
+.chkout__card-det input {
+	border-radius: 0.5em;
+	padding-inline: 0.5em;
+	line-height: 1.75em;
+	text-align: center;
+	width: 85%;
 }
 
 .chkout__card-meth {
@@ -511,11 +610,15 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 .chkout__card-det {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	text-align: end;
+	width: 100%;
 	margin-inline-end: 1em;
 	margin-block-start: 1em;
+	border: var(--color-shadow) 2px solid;
+	padding: 0.125rem 1rem 0.5rem;
+	border-radius: 0.5em;
 }
 
 .btn__comp-check {
@@ -606,7 +709,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	text-align: center;
 }
 
-.mailing-list__mobile input {
+.mailing-list__mobileinput {
 	max-width: 30em;
 	margin-inline: auto;
 	margin-block-end: 1em;
@@ -654,7 +757,11 @@ input[type="checkbox"]:checked + label > .burger__social {
 	margin-block-start: 1em;
 }
 
-.address, .phone, .email { position: relative;}
+.address,
+.phone,
+.email {
+	position: relative;
+}
 
 .address::before {
 	content: url("/images/Postcode.png");
@@ -671,7 +778,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	width: 2em;
 	position: absolute;
 	left: -1.875em;
-	top: -.25em;
+	top: -0.25em;
 }
 
 .email::before {
@@ -681,4 +788,80 @@ input[type="checkbox"]:checked + label > .burger__social {
 	position: absolute;
 	left: -1.75em;
 	top: 0;
+}
+
+/* home page footer desktop */
+
+@media only screen and (min-width: 685px) {
+	.address::before {
+		left: 3em;
+	}
+
+	.phone::before {
+		left: 3em;
+		top: -1em;
+	}
+	.email::before {
+		left: 3.125em;
+		top: -0.75em;
+	}
+
+	.desktop__footer-grid {
+		background-color: var(--color-bg);
+		display: grid;
+		grid-template-columns: repeat(2, 1fr) 35%;
+		grid-auto-rows: auto;
+		grid-template-areas:
+			"mail contact reach"
+			"soc contact reach";
+		padding: 2em 1em;
+	}
+
+	.mailing_list {
+		display: grid;
+		grid-area: mail;
+		justify-content: center;
+		justify-self: center;
+		border: var(--color-shadow) 2px solid;
+		width: 80%;
+		margin-block-start: 0.5em;
+		border-radius: 0.5em;
+	}
+
+	.mailing_list input {
+		line-height: 1.625em;
+		border-radius: 0.5em;
+		text-align: center;
+		padding: 1em 0.75em;
+		margin-block-end: 1em;
+	}
+
+	.btn__join {
+		margin-block: 0.375em;
+	}
+
+	.socLinks {
+		display: flex;
+		grid-area: soc;
+		margin: 1em 2em;
+	}
+
+	.contact_us {
+		display: flex;
+		flex-direction: column;
+		grid-area: contact;
+	}
+
+	.contact {
+		display: block;
+		grid-area: reach;
+		align-self: center;
+		text-align: right;
+		padding-inline-end: 2em;
+	}
+
+	.contact li {
+		line-height: 1.5em;
+		margin-block: 0.75em;
+	}
 }

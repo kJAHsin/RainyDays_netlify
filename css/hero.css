@@ -21,6 +21,7 @@
 body {
     background-image: url("../images/mobile--hero.png");
     background-size: cover;
+    background-position: top right;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -62,6 +63,9 @@ nav {
 
 .slogan__hero {
     margin-block-start: -2em;
+    background-color: var(--color-accent);
+    padding: .25em .5em;
+    border-radius: .375em;
 }
 
 @media only screen and (min-width: 1000px) {
