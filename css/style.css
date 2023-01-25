@@ -611,7 +611,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	margin-block: 3em;
 }
 
-.contact_us {
+.contact__mobile {
 	display: grid;
 	justify-content: center;
 	border: var(--color-shadow) solid 2px;
@@ -620,7 +620,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	background-color: var(--color-btn);
 }
 
-.contact_us > * {
+.contact__mobile > * {
 	display: block;
 	color: var(--color-ctatext);
 }
