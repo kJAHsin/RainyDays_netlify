@@ -395,7 +395,11 @@ input[type="checkbox"]:checked + label > .burger__social {
 	display: flex;
 	justify-content: center;
 	padding-left: 1em;
-	margin-top: 1em;
+	margin-block: 1em;
+}
+
+.btn__checkout {
+	margin-block-end: 10em;
 }
 
 /* placing summary on grid */
