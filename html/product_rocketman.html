@@ -5,120 +5,72 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<title>Rainydays Product</title>
+		<title>Rainydays Breezer</title>
 	</head>
 	<body>
-		<header class="header-home">
-			<section class="top_header">
-				<nav class="top_nav">
-					<a href="../html/home.html">home</a>
-					<a href="#contact">contact</a>
-					<a href="#about__section-link">about</a>
-					<a href="../html/cart.html"
-						><img src="/images/shopping_cart.png" alt="Cart"
-					/></a>
-				</nav>
-			</section>
-
-			<section class="banner">
-				<div class="mobile__header">
-					<div class="logo_bg">
-						<img src="../images/ellipse_top.png" alt="" />
-					</div>
-					<a href="../index.html" class="logo-span__header">
-						<img
-							class="logo"
-							src="/images/rainydays_umbrella_logo.png"
-							alt="Rainydays logo"
-						/>
-						<span class="slogan"
-							>Clothing that pushes the comfort zone.</span
-						>
-					</a>
+		<header>
+			<div class="mobile__header">
+				<div class="logo_bg">
+					<img src="../images/ellipse_top.png" alt="" />
 				</div>
-
-				<div class="header_images">
+				<a href="/html/home.html">
 					<img
-						src="../images/dude_mountains-1.png"
-						alt="header image 3"
+						class="logo"
+						src="/images/rainydays_umbrella_logo.png"
+						alt="Rainydays logo"
 					/>
-					<img
-						src="../images/lady_hiking-1.png"
-						alt="header image 2"
-					/>
-					<img src="/images/lake__chile-1.png" alt="header image 3" />
-				</div>
-			</section>
+					<span class="slogan"
+						>Clothing that pushes the comfort zone.</span
+					>
+				</a>
+			</div>
 		</header>
-
 		<main>
-			<div class="products__container">
-				<ul>
-					<li class="products__box">
-						<a href="product_breezer.html" class="products__link"
-							><img
-								src="../images/m-jacket-slide.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a
-							href="/html/product_fonzi.html"
-							class="products__link"
-							><img
-								src="../images/m-jacket-slide__1.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a
-							href="/html/product_bruiser.html"
-							class="products__link"
-							><img
-								src="../images/m-jacket-slide__2.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a
-							href="/html/product_rocketman.html"
-							class="products__link"
-							><img
-								src="../images/m-jacket-slide__3.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a href="/html/product_fiji.html" class="products__link"
-							><img
-								src="../images/m-jacket-slide__5.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a
-							href="/html/product_marley.html"
-							class="products__link"
-							><img
-								src="../images/m-jacket-slide__6.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-					<li class="products__box">
-						<a href="/html/product_hero.html" class="products__link"
-							><img
-								src="../images/m-jacket-slide__7.png"
-								alt="first product"
-								class="product__image"
-						/></a>
-					</li>
-				</ul>
+			<div class="product__container">
+				<div class="product__main">
+					<div class="product__image-container">
+						<img
+							src="../images/m-jacket-slide.png"
+							alt="product image"
+						/>
+					</div>
+					<div class="product__info">
+						<h1 class="product__title">Breezer</h1>
+						<p class="product__desc">
+							Lorem ipsum dolor sit amet consectetur. Purus
+							egestas amet eu quis vestibulum commodo. Sit aliquam
+							at ut sed. Egestas integer sagittis diam
+						</p>
+						<h2 class="product__price">
+							$189,-<span class="product__price_sm">(+s&h)</span>
+						</h2>
+					</div>
+				</div>
+				<a href="/html/cart.html" class="btn btn__add-cart">Add to cart</a>
+			</div>
+			<hr class="divider__product" />
+			<div class="marketing__images">
+				<div class="image__container">
+					<img
+						src="/images/laughing_couple-1.png"
+						alt="laughing couple"
+					/>
+				</div>
+				<div class="image__container">
+					<img
+						src="/images/dude_mountains-1.png"
+						alt="dude climbing mountain"
+					/>
+				</div>
+				<div class="image__container">
+					<img src="/images/lake__chile-1.png" alt="lake in chile" />
+				</div>
+				<div class="image__container">
+					<img
+						src="/images/lady_hiking-1.png"
+						alt="lady lost forever"
+					/>
+				</div>
 			</div>
 		</main>
 		<footer>
@@ -137,9 +89,7 @@
 						id="mailing__email"
 						placeholder="Enter your email here"
 					/>
-					<button class="btn btn__join" type="submit">
-						JOIN NOW!
-					</button>
+					<button class="btn btn__join" type="submit">JOIN NOW!</button>
 				</form>
 				<div class="socLinks desktop__footer">
 					<a href="https://instagram.com"
@@ -152,12 +102,12 @@
 						><img src="/images/Facebook.png" alt="Facebook"
 					/></a>
 				</div>
-				<form class="contact_us desktop__footer" id="contact">
+				<form
+					class="contact_us desktop__footer"
+					id="contact"
+				>
 					<h2>Contact us</h2>
-					<label
-						class="sr-only"
-						for="contact__name"
-						title="input name"
+					<label class="sr-only" for="contact__name" title="input name"
 						>input name</label
 					>
 					<input
@@ -166,10 +116,7 @@
 						id="contact__name"
 						placeholder="name"
 					/>
-					<label
-						class="sr-only"
-						for="contact__email"
-						title="input email"
+					<label class="sr-only" for="contact__email" title="input email"
 						>input email</label
 					>
 					<input
