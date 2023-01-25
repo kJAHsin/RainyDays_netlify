@@ -487,7 +487,6 @@ input[type="checkbox"]:checked + label > .burger__social {
 	display: block;
 }
 
-
 .chkout__card-det > label > span {
 	display: inline-block;
 	text-align: center;

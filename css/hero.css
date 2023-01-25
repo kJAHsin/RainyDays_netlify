@@ -42,10 +42,7 @@ nav {
     right: 40%;
     bottom: 25%;
     border-radius: .75em;
-}
-
-.btn__cta-hero {
-    color: var(--color-ctatext);
+        color: var(--color-ctatext);
 }
 
 .cta--hero:hover, .cta--hero:focus {
@@ -65,6 +62,47 @@ nav {
 
 .slogan__hero {
     margin-block-start: -2em;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        background-image: url("../images/desktop--hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right top;
+        min-height: 100vh;
+    }
+
+    .header-hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-hero__img {
+        width: 30em;
+    }
+
+    .logo-hero {
+        justify-content: flex-start;
+        margin: 3em 0 0 5em;
+    }
+
+    nav {
+        display: block;
+        margin: 1.5em 2em 0 0;
+    }
+
+    .nav__header-links {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .btn__cta-hero {
+        right: 60%;
+    }
+
 }
 
 /* social links footer */
