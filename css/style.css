@@ -61,6 +61,11 @@ main {
 .sr-only {
 	visibility: hidden;
 }
+
+a, button {
+	cursor: pointer;
+}
+
 /* hiding content on mobile */
 
 .about_section,
@@ -182,11 +187,15 @@ header {
 		font-size: 1.5em;
 		font-weight: 400;
 		color: var(--color-ctatext);
+		padding-inline: .375em;
+
 	}
 
 	.top_nav a:hover,
 	.top_nav a:focus {
 		text-decoration: underline;
+		background-color: var(--color-bg);
+		border-radius: .125em;
 	}
 
 	.header_images {
@@ -547,6 +556,11 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 .btn__checkout {
 	margin-block-end: 10em;
+}
+
+.logo-span__cart > img {
+	position: relative;
+	z-index: 100;
 }
 
 /* placing summary on grid */
