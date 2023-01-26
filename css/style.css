@@ -213,7 +213,7 @@ header {
 
 .product_carousel {
 	display: grid;
-	grid-template-rows: min-content minmax(20%, 3em);
+	grid-template-rows: min-content;
 	margin: 0;
 }
 
