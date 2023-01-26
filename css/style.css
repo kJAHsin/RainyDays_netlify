@@ -62,7 +62,8 @@ main {
 	visibility: hidden;
 }
 
-a, button {
+a,
+button {
 	cursor: pointer;
 }
 
@@ -167,35 +168,34 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		margin-inline: auto; 
-		padding-inline: 2.5em calc( 100% - 25em );
+		margin-inline: auto;
+		padding-inline: 2.5em calc(100% - 25em);
 		gap: 2em;
 		max-width: 1050px;
 		position: fixed;
 		background-color: var(--color-slogan);
-		z-index:  1;
+		z-index: 1;
 	}
 
 	@media only screen and (min-width: 1000px) {
 		.top_nav {
 			padding-inline-end: 40vw;
 		}
-		
 	}
 
 	.top_nav a {
 		font-size: 1.5em;
 		font-weight: 400;
 		color: var(--color-ctatext);
-		padding-inline: .375em;
-
+		padding-inline: 0.375em;
+		transition-duration: 0.25s;
 	}
 
 	.top_nav a:hover,
 	.top_nav a:focus {
 		text-decoration: underline;
 		background-color: var(--color-bg);
-		border-radius: .125em;
+		border-radius: 0.125em;
 	}
 
 	.header_images {
@@ -275,12 +275,38 @@ header {
 .product_slide {
 	display: grid;
 	position: relative;
+	transition: 0.5s;
+}
+
+.product_slide:hover,
+.product_slide:focus {
+	transform: scale(95%);
 }
 
 .product_slide img {
 	display: block;
 	height: 20em;
 	width: auto;
+}
+
+/* bouncing animation on cta-product button */
+
+@keyframes bounce {
+	0% {
+		top: 0.5em;
+	}
+	50% {
+		top: -0.25em;
+	}
+	80% {
+		top: 0.55em;
+	}
+	95% {
+		top: 0.35em;
+	}
+	100% {
+		top: 0.5em;
+	}
 }
 
 .cta-product {
@@ -295,9 +321,15 @@ header {
 	border-radius: 0.5em;
 	margin-inline: 10vw;
 	margin-block: 0 6em;
-	padding-block: 1em;
+	padding: 1em 0.5em;
 	align-items: center;
 	font-size: 1.125em;
+}
+
+.cta-product:hover,
+.cta-product:focus {
+	animation-name: bounce;
+	animation-duration: 0.75s;
 }
 
 /* scroll arrows for product carousel */
@@ -314,6 +346,12 @@ header {
 	flex-direction: column;
 	position: relative;
 	top: 0.5em;
+	transition-duration: 0.25s;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+	transform: scale(1.05);
 }
 
 @media only screen and (max-width: 375px) {
@@ -409,10 +447,15 @@ input[type="checkbox"]:checked + label > .burger__social {
 .products__container ul {
 	display: grid;
 	grid-template-columns: minmax(40%, 10rem) minmax(40%, 10rem);
-	column-gap: 1em;
+	column-gap: 0.75em;
 	justify-content: center;
 	margin: 2em 0 5em;
-	padding: 0;
+	padding: 0 5em;
+}
+
+.products__container li:hover,
+.products__container li:focus {
+	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 375px) {
@@ -961,6 +1004,8 @@ input[type="checkbox"]:checked + label > .burger__social {
 		margin: 1em 2em;
 	}
 
+	/* contact us form */
+
 	.contact_us {
 		display: flex;
 		flex-direction: column;
@@ -988,6 +1033,8 @@ input[type="checkbox"]:checked + label > .burger__social {
 		color: var(--color-ctatext);
 		border-radius: 0.25em;
 	}
+
+	/* contact information */
 
 	.contact {
 		display: block;
