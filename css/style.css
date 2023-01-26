@@ -871,7 +871,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 /* home page footer desktop */
 
-@media only screen and (min-width: 685px) {
+@media only screen and (min-width: 530px) {
 	.address::before {
 		left: 3em;
 	}
@@ -929,7 +929,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 		display: flex;
 		flex-direction: column;
 		grid-area: contact;
-		margin-inline: 4em;
+		/* margin-inline: 4em; */
 		margin-block: 2.5em;
 		padding: 0.5em .75em 0;
 		border: var(--color-shadow) 2px solid;
@@ -950,7 +950,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	}
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 1100px) {
 	.address::before, .phone::before, .email::before {
 		display: none;
 	}
