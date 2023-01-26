@@ -166,6 +166,12 @@ header {
 		max-width: 1050px;
 	}
 
+	.top_nav a {
+		font-size: 1.5em;
+		font-weight: 400;
+		color: var(--color-ctatext);
+	}
+
 	.top_nav a:hover,
 	.top_nav a:focus {
 		text-decoration: underline;
