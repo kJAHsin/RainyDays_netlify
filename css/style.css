@@ -426,7 +426,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 }
 
 .product__main img {
-	display: inline-block;
+	display: block;
 	width: 100%;
 	height: auto;
 }
@@ -439,7 +439,6 @@ input[type="checkbox"]:checked + label > .burger__social {
 	}
 
 	.product__image-container {
-		padding-left: 1.2em;
 		margin-inline: auto;
 	}
 
