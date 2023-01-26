@@ -905,10 +905,11 @@ input[type="checkbox"]:checked + label > .burger__social {
 		width: 80%;
 		margin-block-start: 0.5em;
 		border-radius: 0.5em;
+		padding-inline: .5em;
 	}
 
 	.mailing_list input {
-		line-height: 1.625em;
+		line-height: 1em;
 		border-radius: 0.5em;
 		text-align: center;
 		padding: 1em 0.75em;
@@ -930,10 +931,27 @@ input[type="checkbox"]:checked + label > .burger__social {
 		flex-direction: column;
 		grid-area: contact;
 		/* margin-inline: 4em; */
-		margin-block: 2.5em;
+		margin-block: .5em 2.5em;
 		padding: 0.5em .75em 0;
 		border: var(--color-shadow) 2px solid;
 		border-radius: .5em;
+	}
+
+	.contact_us input {
+		line-height: 1.5em;
+	}
+
+	.btn__contact-us {
+		display: flex;
+		justify-content: center;
+		margin: 1em auto 1em;
+		border: var(--color-shadow) 2px solid;
+		width: max-content;
+		padding-inline: 1em;
+		padding-block: .25em;
+		background-color: var(--color-cta);
+		color: var(--color-ctatext);
+		border-radius: .25em;
 	}
 
 	.contact {
