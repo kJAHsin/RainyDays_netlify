@@ -61,9 +61,11 @@ nav {
 
 /* slogan */
 
+
 .slogan__hero {
     margin-block-start: -2em;
     background-color: var(--color-accent);
+    border: var(--color-slogan) 2px solid;
     padding: .25em .5em;
     border-radius: .375em;
 }
