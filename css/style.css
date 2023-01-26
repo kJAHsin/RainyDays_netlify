@@ -149,11 +149,12 @@ header {
 	.header-home {
 		background-color: var(--color-bg);
 		padding-block-start: 1em;
+		margin-block-end: 4em;
 	}
 
 	.logo-span__header {
 		position: absolute;
-		top: 14rem;
+		top: 12rem;
 		left: 3rem;
 	}
 
@@ -161,9 +162,20 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		margin-inline: 3em;
+		margin-inline: auto; 
+		padding-inline: 2.5em calc( 100% - 25em );
 		gap: 2em;
 		max-width: 1050px;
+		position: fixed;
+		background-color: var(--color-slogan);
+		z-index:  1;
+	}
+
+	@media only screen and (min-width: 1000px) {
+		.top_nav {
+			padding-inline-end: 40vw;
+		}
+		
 	}
 
 	.top_nav a {
@@ -180,6 +192,12 @@ header {
 	.header_images {
 		display: flex;
 		justify-content: flex-end;
+		z-index: 10;
+	}
+
+	.header_images img {
+		position: relative;
+		z-index: 10;
 	}
 
 	.header_images img:first-child {
@@ -240,6 +258,7 @@ header {
 	margin: 1em 0 0 0;
 	padding: 0;
 	overflow-x: scroll;
+	scroll-behavior: smooth;
 	-ms-overflow-style: none; /* hiding scrollbar IE and Edge */
 	scrollbar-width: none; /* hiding scrollbar Firefox */
 }
@@ -266,7 +285,7 @@ header {
 	width: 50%;
 	border-radius: 0.5em;
 	margin-inline: 10vw;
-	margin-block: -1.5em 6em;
+	margin-block: 0 6em;
 	padding-block: 1em;
 	align-items: center;
 	font-size: 1.125em;
