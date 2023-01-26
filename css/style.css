@@ -438,9 +438,8 @@ input[type="checkbox"]:checked + label > .burger__social {
 .products__container {
 	display: grid;
 	margin: 0;
-	padding: 0;
+	padding: 0 .75em;
 	height: auto;
-	overflow-x: hidden;
 	overflow-y: scroll;
 }
 
