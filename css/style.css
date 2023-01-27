@@ -175,18 +175,19 @@ header {
 		position: fixed;
 		background-color: var(--color-slogan);
 		z-index: 1;
+		border-radius: 0 .25em 5em 0;
 	}
 
 	@media only screen and (min-width: 1000px) {
 		.top_nav {
-			padding-inline-end: 30vw;
+			padding-inline-end: 36.5vw;
 			max-width: 1200px;
 		}
 	}
 
 	@media only screen and (min-width: 2100px) {
 		.top_nav {
-			padding-inline-end: 8vw;
+			padding-inline-end: 15vw;
 		}
 	}
 
