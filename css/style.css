@@ -184,6 +184,7 @@ header {
 	@media only screen and (min-width: 1000px) {
 		.top_nav {
 			padding-inline-end: 30vw;
+			max-width: 1200px;
 	}
 
 	.top_nav a {
@@ -1072,4 +1073,4 @@ input[type="checkbox"]:checked + label > .burger__social {
 	.email::before {
 		display: none;
 	}
-}
+}}
