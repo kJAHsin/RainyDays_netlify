@@ -152,6 +152,10 @@ header {
 		display: block;
 	}
 
+	.top_header {
+		max-width: 1200px;
+	}
+
 	.header-home {
 		background-color: var(--color-bg);
 		padding-block-start: 1em;
@@ -180,8 +184,6 @@ header {
 	@media only screen and (min-width: 1000px) {
 		.top_nav {
 			padding-inline-end: 30vw;
-			max-width: 1200px;
-		}
 	}
 
 	.top_nav a {
