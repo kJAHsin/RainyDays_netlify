@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Rainydays home page">
+		<meta name="description" content="Rainydays home page" />
 		<title>Rainydays Home</title>
 		<link rel="stylesheet" href="/css/style.css" />
 	</head>
@@ -47,10 +47,7 @@
 						src="../images/lady_hiking-1.png"
 						alt="header image 2"
 					/>
-					<img
-						src="/images/lake__chile-1.png"
-						alt="header image 3"
-					/>
+					<img src="/images/lake__chile-1.png" alt="header image 3" />
 				</div>
 			</section>
 		</header>
@@ -74,7 +71,10 @@
 								/>
 							</a>
 						</li>
-						<li class="product_slide product_slide3">
+						<li
+							class="product_slide product_slide3"
+							id="half-beginning"
+						>
 							<a href="product.html">
 								<img
 									src="/images/jacket__frame-fiji.png"
@@ -90,7 +90,7 @@
 								/>
 							</a>
 						</li>
-						<li class="product_slide product_slide5">
+						<li class="product_slide product_slide5" id="half-end">
 							<a href="product.html">
 								<img
 									src="/images/jacket__frame-hero.png"
@@ -117,13 +117,34 @@
 					</ul>
 				</div>
 				<div class="product_carousel--nav">
-					<a class="left-arrow product_carousel-arrows" href="#beginning"
+					<a
+						class="left-arrow product_carousel-arrows"
+						href="#beginning"
 						><img
 							src="../images/left.png"
 							alt="scroll products left arrow"
 						/>
 					</a>
-					<a href="product.html" class="cta-product">See All Products! </a>
+					<a
+						class="left-arrow product_carousel-arrows"
+						href="#half-beginning"
+						><img
+							src="../images/left.png"
+							alt="scroll products left arrow"
+						/>
+					</a>
+					<a href="product.html" class="cta-product"
+						>See All Products!
+					</a>
+					<a
+						class="right-arrow product_carousel-arrows"
+						href="#half-end"
+					>
+						<img
+							src="../images/right.png"
+							alt="scroll products right arrow"
+						/>
+					</a>
 					<a class="right-arrow product_carousel-arrows" href="#end">
 						<img
 							src="../images/right.png"
@@ -133,7 +154,11 @@
 				</div>
 			</div>
 			<section class="about_section">
-				<img src="/images/about_image.png" alt="ice climbing" id="about__section-link" />
+				<img
+					src="/images/about_image.png"
+					alt="ice climbing"
+					id="about__section-link"
+				/>
 				<div class="about_text">
 					<div class="par1">
 						<h2>What do we stand for here at Rainydays?</h2>
@@ -180,7 +205,9 @@
 						id="mailing__email"
 						placeholder="Enter your email here"
 					/>
-					<button class="btn btn__join" type="submit">JOIN NOW!</button>
+					<button class="btn btn__join" type="submit">
+						JOIN NOW!
+					</button>
 				</form>
 				<div class="socLinks desktop__footer">
 					<a href="https://instagram.com"
@@ -193,12 +220,12 @@
 						><img src="/images/Facebook.png" alt="Facebook"
 					/></a>
 				</div>
-				<form
-					class="contact_us desktop__footer"
-					id="contact"
-				>
+				<form class="contact_us desktop__footer" id="contact">
 					<h2>Contact us</h2>
-					<label class="sr-only" for="contact__name" title="input name"
+					<label
+						class="sr-only"
+						for="contact__name"
+						title="input name"
 						>input name</label
 					>
 					<input
@@ -207,7 +234,10 @@
 						id="contact__name"
 						placeholder="name"
 					/>
-					<label class="sr-only" for="contact__email" title="input email"
+					<label
+						class="sr-only"
+						for="contact__email"
+						title="input email"
 						>input email</label
 					>
 					<input

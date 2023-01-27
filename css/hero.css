@@ -17,113 +17,143 @@
 	--fs-small: 0.625em;
 }
 
-
 body {
-    background-image: url("../images/mobile--hero.png");
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+	background-image: url("../images/mobile--hero.png");
+	background-size: cover;
+	background-position: top right;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 /* hidden on mobile */
 
 nav {
-    display: none;
+	display: none;
 }
 
 .btn__cta-hero {
-    position: relative;
-    display: flex;
-    height: fit-content;
-    border: var(--color-shadow) 2px solid;
-    background-color: var(--color-btn);
-    padding: .75em;
-    font-size: 1.2em;
-    right: 40%;
-    bottom: 25%;
-    border-radius: .75em;
-        color: var(--color-ctatext);
+	position: relative;
+	display: flex;
+	height: fit-content;
+	border: var(--color-shadow) 2px solid;
+	background-color: var(--color-btn);
+	padding: 0.75em 2.25em;
+	font-size: 1.2em;
+	right: 10%;
+	bottom: 25%;
+	border-radius: 0.75em;
+	color: var(--color-ctatext);
+	transition-duration: 0.25s;
 }
 
-.cta--hero:hover, .cta--hero:focus {
-    text-decoration: underline;
+.btn__cta-hero:hover,
+.btn__cta-hero:focus {
+	text-decoration: underline;
+	transform: scale(0.9);
 }
 
 /* logo placement */
 
 .logo-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
 }
 
 /* slogan */
 
-
 .slogan__hero {
-    margin-block-start: -2em;
-    background-color: var(--color-accent);
-    border: var(--color-slogan) 2px solid;
-    padding: .25em .5em;
-    border-radius: .375em;
+	background-color: var(--color-accent);
+	border: var(--color-slogan) 2px solid;
+	padding: 0.25em 0.5em;
+	border-radius: 0.375em;
+	text-align: center;
+	margin-block-start: -2em;
+	margin-inline: 5vw;
+}
+
+@media only screen and (max-width: 510px) {
+	.slogan__hero {
+		max-width: 18ch;
+		margin: 0;
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 999px) {
+	.slogan__hero {
+		right: 12.5%;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
+	body {
+		background-image: url("../images/desktop--hero.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right top;
+		min-height: 100vh;
+	}
 
-    body {
-        background-image: url("../images/desktop--hero.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right top;
-        min-height: 100vh;
-    }
+	.header-hero {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    .header-hero {
-        display: flex;
-        justify-content: space-between;
-    }
+	.logo-hero__img {
+		width: 30em;
+	}
 
-    .logo-hero__img {
-        width: 30em;
-    }
+	.logo-hero {
+		justify-content: flex-start;
+		margin: 3em 0 0 5em;
+	}
 
-    .logo-hero {
-        justify-content: flex-start;
-        margin: 3em 0 0 5em;
-    }
+	nav {
+		display: block;
+		margin: 1.5em 10% 0 0;
+	}
 
-    nav {
-        display: block;
-        margin: 1.5em 10% 0 0;
-    }
+	.nav__header-links {
+		display: flex;
+		gap: 2.5em;
+		align-items: center;
+	}
 
-    .nav__header-links {
-        display: flex;
-        gap: 2em;
-        align-items: center;
-    }
+	.nav__header-links a {
+		font-size: 1.125em;
+		font-weight: 700;
+	}
 
-    .btn__cta-hero {
-        right: 60%;
-    }
+	.nav__header-links a:hover,
+	.nav__header-links a:focus {
+		text-decoration: underline;
+	}
 
+	.shopping-cart:hover {
+		border-bottom: var(--color-font) 1px solid;
+	}
+
+	.btn__cta-hero {
+		right: 60%;
+	}
 }
 
 /* social links footer */
 
 .socLinks {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 6rem;
-    left: 2rem;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 6rem;
+	left: 2rem;
 }
 
-@media only screen and (min-width: 690px) { 
-    .socLinks {
-        flex-direction: row;
-        gap: 10vw;
-    }
+@media only screen and (min-width: 690px) {
+	.socLinks {
+		flex-direction: row;
+		gap: 10vw;
+		bottom: 2rem;
+	}
 }

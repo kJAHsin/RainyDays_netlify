@@ -211,6 +211,8 @@ header {
 
 	.header_images img:first-child {
 		opacity: 0;
+		transition: .6s;
+		transform: scaleX(.5);
 	}
 
 	.header_images img:nth-child(2),
@@ -219,19 +221,20 @@ header {
 	}
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 740px) {
 	.header_images img:first-child {
 		opacity: 100%;
+		transform: scaleX(1);
 	}
 }
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 1023px) {
 	.header_images img:nth-child(2) {
 		display: flex;
 	}
 }
 
-@media only screen and (min-width: 1265px) {
+@media only screen and (min-width: 1315px) {
 	.header_images img:nth-child(3) {
 		display: flex;
 	}
@@ -438,7 +441,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 .products__container {
 	display: grid;
 	margin: 0;
-	padding: 0 .75em;
+	padding: 0 0.75em;
 	height: auto;
 	overflow-y: scroll;
 }
@@ -475,8 +478,6 @@ input[type="checkbox"]:checked + label > .burger__social {
 	display: block;
 	width: 10em;
 }
-
-/* .product__image {} */
 
 /* individual product page */
 
@@ -551,6 +552,10 @@ input[type="checkbox"]:checked + label > .burger__social {
 	padding: 0.75em 0.25em;
 	justify-content: center;
 	justify-self: center;
+}
+
+.btn:hover, .btn:focus {
+	text-decoration: underline;
 }
 
 /* dividing line */
@@ -985,16 +990,20 @@ input[type="checkbox"]:checked + label > .burger__social {
 		padding-inline: 0.5em;
 	}
 
+	.mailing_list h2 {
+		margin-block-start: 0.5em;
+	}
+
 	.mailing_list input {
 		line-height: 1em;
 		border-radius: 0.5em;
 		text-align: center;
-		padding: 1em 0.75em;
+		padding: 0.5em 0.75em;
 		margin-block-end: 1em;
 	}
 
 	.btn__join {
-		margin-block: 0.375em;
+		margin-block-end: 1em;
 	}
 
 	.socLinks {
@@ -1014,6 +1023,10 @@ input[type="checkbox"]:checked + label > .burger__social {
 		padding: 0.5em 0.75em 0;
 		border: var(--color-shadow) 2px solid;
 		border-radius: 0.5em;
+	}
+
+	.contact_us h2 {
+		margin-block-start: 0.125em;
 	}
 
 	.contact_us input {
@@ -1041,6 +1054,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 		align-self: center;
 		text-align: right;
 		padding-inline-end: 2em;
+		margin-block-start: -3.5em;
 	}
 
 	.contact li {
