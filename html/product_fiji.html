@@ -4,20 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Rainydays Fiji product page">
+		<meta name="description" content="Rainydays Fiji product page" />
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Rainydays Fiji</title>
 	</head>
 	<body>
 		<header class="header-home">
 			<section class="top_header">
-				<nav class="top_nav">
+				<nav class="top_nav--home top_nav">
 					<a href="../html/home.html">home</a>
 					<a href="#contact">contact</a>
 					<a href="#about__section-link">about</a>
 					<a href="../html/cart.html"
 						><img src="/images/shopping_cart.png" alt="Cart"
 					/></a>
+					<a href="#top" class="nav__top-scroll">^</a>
 				</nav>
 			</section>
 
@@ -41,7 +42,8 @@
 				<div class="header_images">
 					<img
 						src="../images/dude_mountains-1.png"
-						alt="header image 3"
+						class="top"
+						alt="header image 1"
 					/>
 					<img
 						src="../images/lady_hiking-1.png"
@@ -72,7 +74,9 @@
 						</h2>
 					</div>
 				</div>
-				<a href="/html/cart.html" class="btn btn__add-cart">Add to cart</a>
+				<a href="/html/cart.html" class="btn btn__add-cart"
+					>Add to cart</a
+				>
 			</div>
 			<hr class="divider__product" />
 			<div class="marketing__images">
@@ -115,7 +119,9 @@
 						id="mailing__email"
 						placeholder="Enter your email here"
 					/>
-					<button class="btn btn__join" type="submit">JOIN NOW!</button>
+					<button class="btn btn__join" type="submit">
+						JOIN NOW!
+					</button>
 				</form>
 				<div class="socLinks desktop__footer">
 					<a href="https://instagram.com"
@@ -128,12 +134,12 @@
 						><img src="/images/Facebook.png" alt="Facebook"
 					/></a>
 				</div>
-				<form
-					class="contact_us desktop__footer"
-					id="contact"
-				>
+				<form class="contact_us desktop__footer" id="contact">
 					<h2>Contact us</h2>
-					<label class="sr-only" for="contact__name" title="input name"
+					<label
+						class="sr-only"
+						for="contact__name"
+						title="input name"
 						>input name</label
 					>
 					<input
@@ -142,7 +148,10 @@
 						id="contact__name"
 						placeholder="name"
 					/>
-					<label class="sr-only" for="contact__email" title="input email"
+					<label
+						class="sr-only"
+						for="contact__email"
+						title="input email"
 						>input email</label
 					>
 					<input
