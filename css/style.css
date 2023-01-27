@@ -186,7 +186,7 @@ header {
 
 	@media only screen and (min-width: 1000px) {
 		.top_nav {
-			padding-inline-end: 8vw;
+			margin-inline-end: 8vw;
 		}
 	}
 
