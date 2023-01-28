@@ -131,11 +131,6 @@ header {
 		top: 6em;
 	}
 
-	.cta-product {
-		margin-block-end: 10em;
-		max-width: 12em;
-	}
-
 	.thumb__slider img {
 		position: fixed;
 		top: 87.5%;
@@ -334,7 +329,7 @@ header {
 	margin-inline: 5vw;
 	margin-block: 0 6em;
 	padding: 1em 0.5em;
-	align-items: center;
+	text-align: center;
 	font-size: 1.125em;
 }
 
@@ -342,6 +337,13 @@ header {
 .cta-product:focus {
 	animation-name: bounce;
 	animation-duration: 0.75s;
+}
+
+@media only screen and (min-width: 530px) {
+	.cta-product {
+		margin-block-end: 10em;
+		max-width: 12em;
+	}
 }
 
 /* scroll arrows for product carousel */
