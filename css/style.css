@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-	--color-bg: #6ba2c0;
+	--color-bg: #8bbeda;
 	--color-shadow: #3f4a3c;
 	--color-disabled: #a3af9e;
 	--color-accent: #9cb79d;
@@ -843,7 +843,6 @@ input[type="checkbox"]:checked + label > .burger__social {
 
 .img__cont:last-of-type {
 	margin-block-end: 1em;
-	padding-inline-start: 1.5em;
 }
 
 /* about us page mobile */
@@ -1129,6 +1128,19 @@ input[type="checkbox"]:checked + label > .burger__social {
 	.contact li {
 		line-height: 1.5em;
 		margin-block: 0.75em;
+		font-weight: 600;
+	}
+
+	.contact li:nth-child(1):after,
+	.contact li:nth-child(2):after {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 60%;
+		background-color: var(--color-slogan);
+		position: relative;
+		left: 5em;
+		top: 0.25em;
 	}
 }
 
