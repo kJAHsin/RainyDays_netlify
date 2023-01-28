@@ -170,7 +170,7 @@ header {
 		max-width: 950px;
 		position: fixed;
 		background-color: var(--color-slogan);
-		z-index: 1;
+		z-index: 0;
 		border-radius: 0 1.125em 5em 0;
 	}
 
