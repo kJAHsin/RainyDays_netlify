@@ -1109,7 +1109,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 		border: var(--color-shadow) 2px solid;
 		width: max-content;
 		padding-inline: 1em;
-		padding-block: 0.25em;
+		padding-block: 0.5em;
 		background-color: var(--color-cta);
 		color: var(--color-ctatext);
 		border-radius: 0.25em;
