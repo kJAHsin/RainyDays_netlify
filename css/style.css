@@ -761,7 +761,9 @@ input[type="checkbox"]:checked + label > .burger__social {
 	padding-inline: 0.75em;
 }
 
-#creditcardcvc, #creditcardexp, #creditcardnum  {
+#creditcardcvc,
+#creditcardexp,
+#creditcardnum {
 	width: 100%;
 }
 
@@ -1026,6 +1028,23 @@ input[type="checkbox"]:checked + label > .burger__social {
 			"mail contact reach"
 			"soc contact reach";
 		padding: 2em 1em;
+	}
+
+	.desktop__footer-grid h2 {
+		text-align: center;
+	}
+
+	.desktop__footer-grid input {
+		justify-self: center;
+		max-width: 90%;
+	}
+
+	/* mailing list footer */
+
+	@media only screen and (max-width: 720px) {
+		.desktop__footer-grid h2 {
+			font-size: 0.875em;
+		}
 	}
 
 	.mailing_list {
