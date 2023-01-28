@@ -368,7 +368,19 @@ header {
 	transform: scale(1.05);
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 375px) {
+	.product_carousel--nav {
+		justify-content: center;
+		justify-self: center;
+		max-width: 100%;
+	}
+	
+	.product_carousel-arrows {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 530px) {
 	.product_carousel--nav {
 		margin-inline: 1em;
 	}
@@ -376,16 +388,6 @@ header {
 	.right-arrow.product_carousel-arrows,
 	.left-arrow.product_carousel-arrows {
 		transform: scale(0.8);
-	}
-}
-
-@media only screen and (max-width: 375px) {
-	.cta-product {
-		margin-inline: auto;
-	}
-
-	.product_carousel-arrows {
-		display: none;
 	}
 }
 
