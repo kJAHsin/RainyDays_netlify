@@ -92,13 +92,14 @@ nav {
 		background-image: url("../images/desktop--hero.png");
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: right top;
+		background-position: right;
 		min-height: 100vh;
 	}
 
 	.header-hero {
 		display: flex;
 		justify-content: space-between;
+		padding-inline-end: 15em;
 	}
 
 	.logo-hero__img {
