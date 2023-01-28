@@ -176,11 +176,18 @@ header {
 
 	.nav__top-scroll {
 		position: relative;
-		left: 10em;
+		left: 5vw;
 	}
 
 	.nav__top-scroll img {
 		height: 1.25em;
+	}
+
+	@media only screen and (min-width: 820px) {
+		.nav__top-scroll {
+			position: relative;
+			left: 10em;
+		}
 	}
 
 	@media only screen and (min-width: 1000px) {
