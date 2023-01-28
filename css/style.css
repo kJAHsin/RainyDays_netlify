@@ -758,7 +758,11 @@ input[type="checkbox"]:checked + label > .burger__social {
 .chkout__card-det > label,
 .chkout__card-det > label > span {
 	display: block;
-	padding-inline-start: 0.75em;
+	padding-inline: 0.75em;
+}
+
+#creditcardcvc, #creditcardexp, #creditcardnum  {
+	width: 100%;
 }
 
 .payment-meth__title {
@@ -794,6 +798,10 @@ input[type="checkbox"]:checked + label > .burger__social {
 	border: var(--color-shadow) 2px solid;
 	padding: 0.125rem 1rem 0.5rem;
 	border-radius: 0.5em;
+}
+
+.chkout__card-num {
+	grid-column: 1 / span 2;
 }
 
 .btn__comp-check {
