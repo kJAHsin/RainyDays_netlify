@@ -220,8 +220,8 @@ header {
 
 	.header_images img:first-child {
 		opacity: 0;
-		transition: .6s;
-		transform: scaleX(.5);
+		transition: 0.6s;
+		transform: scaleX(0.5);
 	}
 
 	.header_images img:nth-child(2),
@@ -563,7 +563,8 @@ input[type="checkbox"]:checked + label > .burger__social {
 	justify-self: center;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
 	text-decoration: underline;
 }
 
