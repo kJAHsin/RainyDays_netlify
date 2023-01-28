@@ -632,7 +632,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 @media only screen and (min-width: 530px) {
 	.logo-span__cart img {
 		width: 20em;
-		margin-block-start: 1.75em;
+		margin-block-start: 1.875em;
 	}
 }
 
