@@ -350,7 +350,7 @@ header {
 	display: flex;
 	justify-self: center;
 	margin-inline: auto;
-	max-width: 95%;
+	max-width: 70%;
 }
 
 .product_carousel-arrows {
@@ -366,9 +366,14 @@ header {
 	transform: scale(1.05);
 }
 
-@media only screen and (max-width: 700px) {
-	.right-arrow.product_carousel-arrows, .left-arrow.product_carousel-arrows {
-		transform: scale(.8);
+@media only screen and (max-width: 450px) {
+	.product_carousel--nav {
+		margin-inline: 1em;
+	}
+
+	.right-arrow.product_carousel-arrows,
+	.left-arrow.product_carousel-arrows {
+		transform: scale(0.8);
 	}
 }
 
