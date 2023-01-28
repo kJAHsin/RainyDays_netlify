@@ -55,7 +55,7 @@ main {
 	display: grid;
 	justify-content: center;
 	margin: 0;
-	width: 100%;
+	max-width: 100%;
 }
 
 .sr-only {
@@ -177,6 +177,7 @@ header {
 	.nav__top-scroll {
 		position: relative;
 		left: 5vw;
+		transition: left 1s ease-in;
 	}
 
 	.nav__top-scroll img {
