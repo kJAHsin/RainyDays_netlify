@@ -1,5 +1,4 @@
 <img src="images/rainydays_umbrella_logo.png">
-
 # Rainydays Jacket Company
 
 This is the e-commerce website for the Rainydays Jacket Company.
@@ -83,6 +82,8 @@ ________________________________________________________________________
 
 Appendices:
 
-To access website follow link to the Rainydays Landing page and website:
+## To access website follow link to the Rainydays Landing page and website:
 
 [Rainydays Jacket Co.](https://rainydaze.netlify.app)
+[Rainydays Design File](https://www.figma.com/file/iBi0sEjE58tLwpE1TCcSz6/Rainydays%2F2.0?node-id=1%3A90&t=KilxVz7PgUBgBL0g-1)
+[Github Repo](https://github.com/kJAHsin/RainyDays_netlify)
