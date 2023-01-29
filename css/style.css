@@ -369,8 +369,7 @@ header {
 
 .cta-product:hover,
 .cta-product:focus {
-	animation-name: bounce;
-	animation-duration: 0.75s;
+	animation: bounce ease-in-out .875s;
 }
 
 @media only screen and (min-width: 530px) {
