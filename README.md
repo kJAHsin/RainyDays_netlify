@@ -65,3 +65,10 @@ Moving through the project it was a true struggle to gain a solid grasp on the c
 behind CSS and styling.  HTML is quite straight forward as you are only putting the content 
 onto the page.  Although, truly semantic HTML is an art in itself.  
 
+References:
+
+Images taken from Unsplash.Com
+Logo and diverse icons designmed by me
+
+Information gathered from teaching Modules in the course, Youtube (mostly kevin powell), 
+teacher Abidev and fellow students Linda, Brain and Fredrik.
