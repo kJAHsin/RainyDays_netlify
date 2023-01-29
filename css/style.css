@@ -209,6 +209,10 @@ header {
 		.top_nav {
 			padding-inline-end: 15vw;
 		}
+
+		.nav__top-scroll {
+			left: 12.5em;
+		}
 	}
 
 	.top_nav a {
@@ -549,7 +553,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 .product__main {
 	display: grid;
 	grid-template-columns: auto auto;
-	margin: 2em 2em 2em;
+	margin: 2em 2em;
 	justify-content: center;
 }
 
@@ -648,10 +652,21 @@ input[type="checkbox"]:checked + label > .burger__social {
 }
 
 /* cart page */
+
+.logo-span__cart img {
+	position: relative;
+	z-index: 100;
+}
+
 @media only screen and (min-width: 530px) {
 	.logo-span__cart img {
-		width: 20em;
-		margin-block-start: 1.875em;
+		width: 15em;
+		margin-block-start: 2.125em;
+	}
+
+	.slogan__cart {
+		position: relative;
+		top: 1em;
 	}
 }
 
@@ -666,15 +681,16 @@ input[type="checkbox"]:checked + label > .burger__social {
 	margin-block-end: 10em;
 }
 
-.logo-span__cart > img {
-	position: relative;
-	z-index: 100;
-}
-
 .cart__header-text {
 	max-width: 50%;
 	text-align: center;
 	justify-self: center;
+}
+
+@media only screen and (max-width: 530px) {
+	.cart__header-text {
+		margin-block-start: .5em;
+	}
 }
 
 /* placing summary on grid */
