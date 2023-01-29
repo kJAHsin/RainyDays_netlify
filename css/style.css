@@ -10,6 +10,7 @@
 	--color-ctatext: #ffffff;
 	--color-font: #404040;
 	--color-slogan: #256186;
+	--color-check: rgb(36, 201, 71); 
 
 	--ff-standard: "Georgia", sans-serif;
 	--fs-bigger: 1.25em;
@@ -871,6 +872,89 @@ input[type="checkbox"]:checked + label > .burger__social {
 	justify-self: center;
 	margin-block-start: 1.25em;
 }
+
+/* success checkmark animation */
+
+
+@keyframes complete-circle {
+    0% {
+        border: var(--color-check) 3px transparent;
+    }
+    25% {
+        border-top: var(--color-check) 3px solid;
+    }
+    50% {
+        border-right: var(--color-check) 3px solid;
+    }
+    75% {
+        border-bottom: var(--color-check) 3px solid;
+    }
+    100% {
+        border-left: var(--color-check) 3px solid;
+    }
+}
+
+.check-mark__container {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 50%;
+    margin: -3.75em auto 4em;
+    border: var(--color-check) 5px solid;
+    border-radius: 50%;
+    animation: complete-circle ease-in .75s forwards;
+}
+
+@keyframes check-bottom {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.check-mark__container::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 75px);
+    height: 100px;
+    width: 50px;
+    border-bottom: var(--color-check) 5px solid;
+    transform: rotate(45deg);
+    animation: check-bottom ease-out 1s forwards;
+}
+
+@keyframes check-side {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.check-mark__container::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 22.5px);
+    top: calc(50% - 73.75px);
+    height: 95px;
+    width: 50px;
+    border-right: var(--color-check) 5px solid;
+    transform: rotate(45deg);
+    animation: check-side ease-out 1.5s forwards;
+}
+
+
+
 
 .chk__success-txt {
 	text-align: center;
