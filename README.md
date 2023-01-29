@@ -65,6 +65,12 @@ Moving through the project it was a true struggle to gain a solid grasp on the c
 behind CSS and styling.  HTML is quite straight forward as you are only putting the content 
 onto the page.  Although, truly semantic HTML is an art in itself.  
 
+______________________________________________________________________
+
+This website was designed using Figma, coded with VSCode in conjunction with developer tools in Google Chrome.  Portions of this design were made in Illustrator and Photoshop by me.
+
+_______________________________________________________________________
+
 References:
 
 Images taken from Unsplash.Com
@@ -72,3 +78,11 @@ Logo and diverse icons designmed by me
 
 Information gathered from teaching Modules in the course, Youtube (mostly kevin powell), 
 teacher Abidev and fellow students Linda, Brain and Fredrik.
+
+________________________________________________________________________
+
+Appendices:
+
+To access website follow link to the Rainydays Landing page and website:
+
+[Rainydays Jacket Co.](https://rainydaze.netlify.app)

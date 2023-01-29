@@ -282,7 +282,7 @@ header {
 .home__header-text {
 	max-width: 50%;
 	text-align: center;
-	margin: 1em auto 0;
+	margin: .5em auto 0;
 }
 
 .product_carousel {
@@ -297,6 +297,10 @@ header {
 		top: 8em;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.home__header-text {
+		margin-block-start: -3em;
 	}
 }
 
