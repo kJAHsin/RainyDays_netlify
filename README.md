@@ -8,6 +8,8 @@ website built.
 
 ________________________________________________________________________________________
 
+<img src="images/screen-shot__readme.png">
+
 The Landing Page:
 
 In the protoype design, this page was built to give the site a stylish introduction that
