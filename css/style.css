@@ -863,6 +863,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 	max-width: 50%;
 	text-align: center;
 	justify-self: center;
+	margin-block-start: 1em;
 }
 
 .chk__success-img {
