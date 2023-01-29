@@ -920,8 +920,8 @@ input[type="checkbox"]:checked + label > .burger__social {
 .check-mark__container::before {
     content: "";
     position: absolute;
-    left: calc(50% - 25px);
-    top: calc(50% - 75px);
+    left: calc(50% - 23px);
+    top: calc(50% - 77px);
     height: 100px;
     width: 50px;
     border-bottom: var(--color-check) 5px solid;
