@@ -1,5 +1,5 @@
-<img src="images/rainydays_umbrella_logo.png">
-# Rainydays Jacket Company
+
+# Rainydays Jacket Company <img src="images/rainydays_umbrella_logo.png">
 
 This is the e-commerce website for the Rainydays Jacket Company.
 It is designed to be an attractive, user friendly and effective site that works well for 
@@ -7,6 +7,8 @@ both the end user and the company that would be paying for the service of having
 website built.
 
 ________________________________________________________________________________________
+
+<img src="images/screen-shot__readme.png">
 
 The Landing Page:
 
@@ -82,7 +84,7 @@ ________________________________________________________________________
 
 Appendices:
 
-## To access website follow link to the Rainydays Landing page and website:
+To access website follow link to the Rainydays Landing page and website:
 
 [Rainydays Jacket Co.](https://rainydaze.netlify.app)
 [Rainydays Design File](https://www.figma.com/file/iBi0sEjE58tLwpE1TCcSz6/Rainydays%2F2.0?node-id=1%3A90&t=KilxVz7PgUBgBL0g-1)
