@@ -852,7 +852,7 @@ input[type="checkbox"]:checked + label > .burger__social {
 }
 
 .btn__comp-check {
-	margin-block: 2em;
+	margin-block: 2em 8.125em;
 	text-align: center;
 	width: 100%;
 }
